@@ -11,11 +11,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ffmpeg \
     && rm -rf /var/lib/apt/lists/*
 
-COPY requirements.txt .
+COPY processing-service/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY app/ app/
-COPY tessdata/ tessdata/
+COPY processing-service/app/ app/
+COPY processing-service/tessdata/ tessdata/
 
 EXPOSE 8000
 
