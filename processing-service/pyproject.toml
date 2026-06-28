@@ -1,0 +1,9 @@
+[project]
+name = "mindex-processing"
+version = "0.1.0"
+description = "Mindex Processing Service - Document extraction and OCR"
+requires-python = ">=3.11"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
